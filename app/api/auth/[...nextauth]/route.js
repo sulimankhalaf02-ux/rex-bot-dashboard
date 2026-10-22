@@ -12,6 +12,7 @@ const handler = NextAuth({
           scope: "identify guilds",
         },
       },
+      issuer: "https://discord.com",
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
